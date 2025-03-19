@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Chenla&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
+
+/*DEFAULT STYLINGS*/
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+    min-height: 100vh;
+    background-color: #FAF9F6;
+}
+
+h1 {
+    color: white;
+    margin-left: 2%;
+    font-family: Bitter;
+    letter-spacing: 5px;
+}
+
+h2, p {
+    font-family: Mukta Vaani;
+    color: black;
+}
+
+h3, li, a, i {
+    font-family: Mukta Vaani;
+    color: white;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover { 
+    color: grey;
+}
+
+hr {
+    width: 50%;
+}
+
+
+/* HEADER AND NAVBAR */
+header {
+    background-color: #284B63;
+    display: flex;
+    height: 80px;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 40%;
+    margin-right: 2%;
+}
+
+#nav-bar-container {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0%;
+}
+
+.nav-item {
+    list-style-type: none;
+    letter-spacing: 4px;
+    margin-right: 5%;
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-item a:hover:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #F2A71B;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+
+#hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #5E6E64;
+    border-bottom: solid 2px black;
+    margin-bottom: 2.5%;
+}
+
+#hero-image {
+    object-fit: cover;
+}
+
+
+/* MAIN HOME */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#band-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#band-wrapper {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#band-wrapper p {
+    margin-left: 2%;
+}
+
+#members-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.members-row {
+    display: inline-flex;
+}
+
+.img-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 400px;
+    background-color:#5E6E64;
+    margin: 10px;
+    border: solid 3px black;
+    border-radius: 5% 5% 0 0;
+    letter-spacing: 4px;
+}
+
+.img-card img {
+    border-top: solid 2px black;
+}
+
+.img-card:hover {
+    transform: scale(1.04);
+    transition: 400ms;
+}
+
+.img-card:hover:after {
+    content: "";
+    height: 474px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    border-radius: 5% 5% 0 0;
+}
+
+#eras-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#eras-container h3 {
+color: black;
+}
+
+.eras-wrapper {
+    display: inline-flex;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.eras-wrapper iframe {
+    margin: 0 20px 0 0;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #284B63;
+    margin-top: auto;
+    height: 180px;
+    border-top: solid black 2px;
+}
+
+.footer-heading i {
+    margin-right: 10px;
+}
+
+#newsletter-container {
+    margin-left: 5%;
+}
+
+#newsletter-container p {
+    justify-self: center;
+    font-size: medium;
+    color: wheat;
+}
+
+#email-box {
+    font-size: 18px;
+    margin-right: 4px;
+    padding-left: 12px;
+}
+
+#email-button {
+    box-shadow: none;
+    border-radius: 12px;
+    background: orange;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    box-shadow: 0px 5px 100px 0px rgba(0, 0, 0, 0.35);
+    font-weight: normal;
+}
+
+#social-media-container {
+    margin-bottom: 2.5%;
+    margin-right: 12%;
+}
+
+#social-media-container h3 {
+    justify-self: center;
+}
+
+.social-media-item {
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+#social-media-container a i:hover {
+    color: grey;
+    transform: scale(1.4);
+    rotate: 10deg;
+    transition: 200ms;
+}
+
+#copyright-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-bottom: 0.5%;
+}
+
+.contact-item span{
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}

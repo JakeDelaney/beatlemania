@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Chenla&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
+
+/*DEFAULT STYLINGS*/
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+    min-height: 100vh;
+    background-color: #FAF9F6;
+}
+
+h1 {
+    color: white;
+    margin-left: 2%;
+    font-family: Bitter;
+    letter-spacing: 5px;
+}
+
+h2, p {
+    font-family: Mukta Vaani;
+    color: black;
+}
+
+h3, li, a, i, span {
+    font-family: Mukta Vaani;
+    color: white;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover { 
+    color: grey;
+}
+
+hr {
+    width: 50%;
+}
+
+
+/*HEADER AND NAVBAR*/
+header {
+    background-color: #284B63;
+    display: flex;
+    height: 80px;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 50%;
+    margin-right: 2%;
+}
+
+#nav-bar-container {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0%;
+}
+
+.nav-item {
+    list-style-type: none;
+    letter-spacing: 4px;
+    margin-right: 5%;
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-item a:hover:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #F2A71B;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+
+#hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #5E6E64;
+    border-bottom: solid 2px black;
+    margin-bottom: 2.5%;
+}
+
+#hero-image {
+    object-fit: cover;
+}
+
+
+/*MAIN HOME*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#band-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#band-wrapper {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#band-wrapper p {
+    margin-left: 2%;
+}
+
+#members-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.members-row {
+    display: inline-flex;
+}
+
+.img-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 400px;
+    background-color:#284B63;
+    margin: 10px;
+    border: solid 3px black;
+    border-radius: 5% 5% 0 0;
+    letter-spacing: 4px;
+}
+
+.img-card img {
+    border-top: solid 2px black;
+}
+
+.img-card:hover {
+    transform: scale(1.04);
+    transition: 400ms;
+}
+
+.img-card:hover:after {
+    content: "";
+    height: 474px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    border-radius: 5% 5% 0 0;
+}
+
+#eras-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#eras-container h3 {
+color: black;
+}
+
+.eras-wrapper {
+    display: inline-flex;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.eras-wrapper iframe {
+    margin: 0 20px 0 0;
+}
+
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #284B63;
+    margin-top: auto;
+    height: 180px;
+    border-top: solid black 2px;
+}
+
+.footer-heading i {
+    margin-right: 10px;
+}
+
+#newsletter-container {
+    margin-left: 5%;
+}
+
+#newsletter-container p {
+    justify-self: center;
+    font-size: medium;
+    color: wheat;
+}
+
+#email-box {
+    font-size: 18px;
+    margin-right: 4px;
+    padding-left: 12px;
+}
+
+#email-button {
+    box-shadow: none;
+    border-radius: 12px;
+    background: orange;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    box-shadow: 0px 5px 100px 0px rgba(0, 0, 0, 0.35);
+    font-weight: normal;
+}
+
+#social-media-container {
+    margin-bottom: 2.5%;
+    margin-right: 12%;
+}
+
+#social-media-container h3 {
+    justify-self: center;
+}
+
+.social-media-item {
+    font-size: 28px;
+    margin-left: 20px;
+}
+
+#social-media-container a i:hover {
+    color: grey;
+    transform: scale(1.4);
+    rotate: 10deg;
+    transition: 200ms;
+}
+
+#copyright-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-bottom: 0.5%;
+}
+
+.copyright-item {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/*MEMBER PAGES*/
+.member-text-container h2 {
+    color: white;
+}
+
+.member-text-container p {
+    color: white;
+}
+
+.left-align-text {
+    margin: 5% 0 0 5%;
+    width: 25%;
+}
+
+.right-align-text {
+    margin: 3.5% 5% 0 0;
+    width: 25%;
+    float: right;
+}
+
+#background-img-john {
+    background-image: linear-gradient( rgba(0,0,0, 0.4), rgba(0,0,0,20) ), url(../images/lennon-background.jpg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+}
+
+#background-img-paul {
+    background-image: linear-gradient( rgba(0,0,0, 0.1), rgba(0,0,0,20) ), url(../images/mccartney-background.jpg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+}
+
+#background-img-george {
+    background-image: linear-gradient( rgba(0,0,0, 0.4), rgba(0,0,0,20) ), url(../images/harrison-background.jpg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+}
+
+#background-img-ringo {
+    background-image: linear-gradient( rgba(0,0,0, 0.4), rgba(0,0,0,20) ), url(../images/starr-background.jpeg);
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+}
+
+
+/*EVENTS PAGE*/
+#event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 2.5%;
+}
+
+#event-container h3 {
+    color: black;
+}
+
+.event {
+    display: inline-flex;
+    margin-bottom: 5%;
+}
+
+.event i {
+    margin: 0 2% 0 -5%;
+}
+
+.event p {
+    width: 30em;
+    margin-left: 5%;
+}
+
+.event-info * {
+    color: black;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+
+/*ABOUT PAGE*/
+#background-img-about {
+    background-image: linear-gradient( rgba(0,0,0, 0.9), rgba(0,0,0,20) ), url(../images/group-photo2.webp);
+    height: 75vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-top: 2.5%;
+}
+
+#about-container * {
+    color: white;
+}
+
+
+/*MERCHANDISE PAGE*/
+#merch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 60px 0
+}
+
+#merch-container hr {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.merch-row {
+    display: inline-flex;
+}
+
+.merch-row a {
+    color: black;
+}
+
+.merch-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+.merch-card span {
+    margin-bottom: 20px;
+    margin-top: -20px;
+    font-size: 24px;
+}
+
+.merch-card:hover {
+    transform: scale(1.1);
+}
+
+
+/*CONTACT PAGE*/
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+
+#contact-container * {
+    color: black;
+    list-style-type: none;
+}
+
+#contact-container ul {
+    display: flex;
+}
+
+.contact-item {
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+.contact-icon {
+    margin-right: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5% 5% 0 0;
+    margin-bottom: 2%;
+}
+
+#form-header-wrapper{
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+#form-container {
+    width: 50%;
+    margin: 5% 0 5% 0;
+}
+
+label {
+    font-size: 20px;
+}
+
+.contact-buttons {
+    margin-right: 20px;
+    font-size: 20px;
+    border-radius: 5%;
+    border: 1px black solid;
+    padding: 5px;
+}
+
+
+/*SITE MAP*/
+#site-map-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    border: 1px solid black;
+    width: 25%;
+    border-radius: 5% 5% 0 0;
+}
+
+#site-map-wrapper {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+#site-map-container ul * {
+    color: black;
+    display: block;
+    font-size: 24px;
+}
+
+#site-map-container li * {
+    list-style: circle;
+}
+
+#site-map-container h2 {
+    margin: 0;
+    padding: 0;
+}

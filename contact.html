@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e5f69c717a.js" crossorigin="anonymous"></script>
+    <title>Beatlemania - Contact</title>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header>
+        <h1>Beatlemania</h1>
+        <nav>
+            <ul id="nav-bar-container">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="events.html">Events</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="merch.html">Merchandise</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="site-map.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN CONTENT-->
+    <main>
+        <!--CONTACT INFORMATION-->
+        <div id="contact-container">
+            <h2>CONTACT US</h2>
+            <ul>
+                <li class="contact-item"><i class="fa-solid fa-phone contact-icon"></i>(01) 123 4678</li>
+                <li class="contact-item"><i class="fa-solid fa-inbox contact-icon"></i><a href="mailto:jakedelaney24@gmail.com">beatlemania.ie</a></li>
+            </ul>
+        </div>
+
+        <!--MEMBER FORM-->
+        <form>
+            <div id="form-header-wrapper">
+                <h2>Become a member!</h2>
+            </div>
+
+            <div id="form-container">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name"><br><br>
+
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name"><br><br>
+
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="phone" id="phone" name="phone">Phone number:</label>
+                <input type="phone" id="phone" name="phone"><br><br>
+
+                <label for="age-range">Age range:</label>
+                <select name="age-range" id="age-range">
+                    <option value="young-adult">20-34</option>
+                    <option value="middle-adult">35-50</option>
+                    <option value="late-adult">51-65</option>
+                    <option value="elderly-adult">65+</option>
+                </select><br><br>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="gender">Male:</label>
+                    <input type="radio" id="male" name="gender">
+                    <label for="gender">Female:</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="gender">Rather not say:</label>
+                    <input type="radio" id="not-defined" name="gender">
+                </fieldset><br><br>
+
+                <div>
+                    <input class="contact-buttons" type="submit" value="Submit">
+                    <input class="contact-buttons" type="reset" value="Reset!">
+                </div>
+
+            </div>
+        </form>
+
+    </main>
+   
+    <!--FOOTER-->
+    <footer>
+
+        <!--NEWSLETTER SIGNUP-->
+        <div id="newsletter-container">
+            <h3 class="footer-heading"><i class="fa-solid fa-envelope fa-bounce"></i>STAY CONNECTED</h3>
+            <p>Join our monthly newsletter and keep up to date with news, events and offers.</p>
+            <input type="email" id="email-box" name="email" placeholder="Enter your email:">
+            <input type="button" id="email-button" value="Click here!">
+        </div>
+
+        <!--SOCIAL MEDIA LINKS-->
+        <div id="social-media-container">
+            <h3 class="footer-heading"><i class="fa-solid fa-heart"></i>FOLLOW US</h3>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter social-media-item"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube social-media-item"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social-media-item"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook social-media-item"></i></a>
+        </div>
+
+        <!--COPYRIGHT AND LAST UPDATED-->
+        <div id="copyright-container">
+            <span class="copyright-item">
+                Copyright &copy 2025
+            </span>
+            <span class="copyright-item">
+                Last updated: 24/03/2025
+            </span>
+        </div>
+
+    </footer>
+
+</body>
+</html>
